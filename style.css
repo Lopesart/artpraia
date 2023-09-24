@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+:root{
+    --cor0: #000c45;
+    --cor1: #09016a;
+    --cor2: #553ddc;
+    --cor3: #002efc;
+    --cor4: rgb(36, 26, 92);
+    --cor5: #0e063d;
+    --cor6: #000000;
+    --cor7: #ffffff;
+  
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-seris;
+    --fonfe-destaque: 'Rubik Burned', cursive;/* fonte externa sites */
+    --fonte-android:'Android', sursive;/* fonte externa baixada */
+}
+
+* {/* configuração global */
+    margin: -2px;
+}
+
+
+.bg-svg1 {
+    fill: var(--cor2);
+    width: 100%;
+}
+.bg-svg2 {
+    fill: var(--cor7);
+    width: 100%;
+}
+.bg-svg3 {
+    fill: var(--cor1);
+    width: 100%;
+}
+.bg-svg4 {
+    background-color: var(--cor6);
+    width: 100%;
+}
+body {
+    background-color: var(--cor0);
+}
+
+header{ 
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+    background-image:linear-gradient(to right, var(--cor3) 15%,transparent);
+}
+
+.content {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.txtlogo {
+    color: var(--cor5);
+    display: inline;
+    margin: 0px 0px 0px 10px;
+    font-size: 6em;
+}
+
+.button, nav > h3{
+    color: var(--cor7);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+    background-color: var(--cor5);
+    margin: 3px 0px;
+    box-shadow: 0px 0px 4px rgb(0, 0, 0);
+}
+nav > img:hover,.button:hover, h3:hover {
+    color: var(--cor6);
+    background-color: var(--cor3);
+}
+nav > h3 {
+    margin: 0px 35px 0px 0px;
+    }
+nav > img {
+    margin: 0px 0px 0px 45px;
+    height: 30px;
+    padding: 5px;
+    background-color: var(--cor5);
+    border-radius: 10%;}
+#links {text-align: center;
+    display: none;}
+#links > .button {
+    width: 250px;
+    }
+#links > a {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+    @media (max-width: 1180px) {
+        nav > .button{display: none;text-decoration: none;}
+        div {text-align: center;}
+
+    }
+    @media (min-width: 1180px) {
+        nav > h3 {
+            display: none;}
+        #links > .button {
+            display: none;}
+
+    }
+    
+    @media (max-width: 900px) {
+        /* Quando a largura da div for menor ou igual a 600px */
+        .txtlogo {
+          font-size: 4em; /* Redefine o tamanho do h1 para um valor menor */
+        }
+        .logo {
+            width: 60px;
+        }
+      }
+    @media (max-width: 600px) {
+        nav > h3 {
+            display: none;}
+        /* Quando a largura da div for menor ou igual a 600px */
+        .txtlogo {
+          font-size: 2em; /* Redefine o tamanho do h1 para um valor menor */
+        }
+        .logo {
+            width: 40px;
+        }
+        #pp1 {margin-top: 15px;}
+    }
+    @media (min-width: 600px) {
+            nav > img {
+                display: none;}
+        }
+
+#p1, #p3, #p5, #p7 {
+    margin: auto;
+    
+    background-color: var(--cor2);
+}
+#p2, #p4, #p6 {
+    margin: auto;
+    
+    background-color: var(--cor7);
+}
+
+h2, h1, p {
+    text-align: center;
+    margin: 2px 3px;
+}
+
+#img01 {
+    background-image: url('imagens/praia.jpg');
+    background-position: top bottom;
+}
+.imagem  {
+    padding: 10px;
+    background-color:var(--cor1);
+    color: var(--cor5);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+footer {
+    font-size: 0.7em;
+    padding: 2px;
+    text-align: center;
+    color: var(--cor7);
+    background-color: var(--cor6);
+}
+
+
+
+.cont {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+   /* Define a altura da div para ocupar a altura da tela inteira */
+}
+
+img {
+  max-width: 100%; /* Para garantir que a imagem não exceda o tamanho da div */
+  height: auto; /* Para manter a proporção da imagem */
+}
