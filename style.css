@@ -171,7 +171,17 @@ button {
     font-weight: bold;
     transition-duration: .5s;
     animation: backwards;
+    animation: pulse 1s infinite alternate;
 }
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Tamanho normal no início da animação */
+    }
+    100% {
+        transform: scale(1.1); /* Tamanho aumentado no final da animação */
+    }
+}
+
 button:hover {
     color: var(--cor5);
     background-color: var(--cor3);  
