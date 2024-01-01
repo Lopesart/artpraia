@@ -13,11 +13,13 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-seris;
     --fonfe-destaque: 'Rubik Burned', cursive;/* fonte externa sites */
     --fonte-android:'Android', sursive;/* fonte externa baixada */
+    --texto-principal: "https://api.whatsapp.com/send?phone=5513974116680&text=Quero%20informa%C3%A7%C3%B5es%20sobre%20o%20imovel%20xxxxx"
 }
 
 * {/* configuração global */
     margin: -2px;
 }
+
 
 
 .bg-svg1 {
@@ -171,8 +173,10 @@ button {
     font-weight: bold;
     transition-duration: .5s;
     animation: backwards;
-    animation: pulse 1s infinite alternate;
 }
+
+.pulso{animation: pulse 0.7s infinite alternate;}
+
 @keyframes pulse {
     0% {
         transform: scale(1); /* Tamanho normal no início da animação */
